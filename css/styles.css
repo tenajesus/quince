@@ -63,10 +63,18 @@ h5 {
   text-transform: uppercase;
   background-color: #098048; }
 
+  .btn-filldos {
+    color: #fff;
+    border: solid 2px #5c1f43;
+    border-radius: 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #4d2743; }
+
 .btn-fill:hover, .btn-fill:focus {
   color: #fff;
-  background-color: #dfee56;
-  border-color: #D7405D; }
+  background-color: #43d685;
+  border-color: #837f7f; }
 
 .btn-small {
   padding: 8px 40px; }

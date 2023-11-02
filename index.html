@@ -46,6 +46,7 @@
                                 <li><a href="#agradecimientos">Padrinos</a></li>
                                 <li><a href="#asistencia">Confirmar asistencia</a></li>
                                 <li><a href="#ubica">Ubicaciones</a></li>
+                                <li><a href="#regalo">Lluvia de Sobres</a></li>
                             </ul>
                             <ul class="member-actions">
                                 <li><a href="http://recepcion.com.mx" target="_blank" class="btn-white btn-small">Recepcion.mx</a></li>
@@ -70,9 +71,7 @@
             </div>
         </div> -->
         <div class="down-arrow floating-arrow"><a href="#"><i class="fa fa-angle-down"></i></a></div>
-    </section>
-
-   
+    </section>   
     <section class="intro section-padding">
         <div class="col-md-12 text-center">
             <h2>
@@ -81,7 +80,7 @@
         </div>
         <div class="container">
             <div class="row center">
-             <div class="uk-grid-small" uk-grid uk-countdown="date: 2023-11-10T05:00:00+00:00">
+             <div class="uk-grid-small" uk-grid uk-countdown="date: 2023-11-11T05:00:00+00:00">
                 <div>
                     <div class="uk-countdown-number uk-countdown-days"></div>
                     <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Dias</div>
@@ -187,6 +186,7 @@
             </div>
         </div>
     </section>
+    
     <section class="blog-intro section-padding" id="agradecimientos">
         <div class="container">
             <div class="row">
@@ -253,6 +253,22 @@
             </div>
         </div>
     </section>
+    
+    <section class="sign-up section-padding text-center" id="regalo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>Lluvia de Sobres</h3>
+                    <p class="text-justify">Para mí lo más importante es tu asistencia a mis XV años, en caso de desear hacerme un regalo éste podrás realizarlo en efectivo colocándolo en un pequeño sobre y el cual podrás depositar en un cofre que encontrarás en la entrada del salón.</p>
+                    <form class="signup-form" role="form">
+                        
+                        <a class="btn-filldos dagn sign-up-btn" href="https://wa.me/524921760466/?text=Espero que mi regalo te sea de utilidad, cumple tu sueños, te he dejado un sobre especial" target="_blank">Notificar a Itzia que le dejado un sobre especial</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="sign-up section-padding text-center" id="asistencia">
         <div class="container">
             <div class="row">
@@ -261,9 +277,9 @@
                     <p>Es importante que confirmes tu asistencia antes del día 7 de Noviembre de 2023</p>
                     <form class="signup-form" role="form">
                         
-                        <a class="btn-fill sign-up-btn" href="https://wa.me/4921452478" target="_blank">Deseo confirmar con la mamá</a>
+                        <a class="btn-fill sign-up-btn" href="https://wa.me/524921452478/?text=Deseo confirmar mi asistencia la fiesta de XV años de Itzia mi nombre es:" target="_blank">Deseo confirmar con la mamá</a>
                         <br><br>
-                        <a class="btn-fill sign-up-btn" href="https://wa.me/4921248474" target="_blank">Deseo confirmar con el papá</a>
+                        <a class="btn-fill sign-up-btn" href="https://wa.me/524921248474?text=Deseo confirmar mi asistencia la fiesta de XV años de Itzia Janet mi nombre es:" target="_blank">Deseo confirmar con el papá</a>
 
                     </form>
                 </div>
@@ -307,5 +323,36 @@
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="bower_components/classie/classie.js"></script>
     <script src="bower_components/jquery-waypoints/lib/jquery.waypoints.min.js"></script>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Nov 10, 2023 17:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
 </body>
 </html>
