@@ -42,7 +42,7 @@ h5 {
 .btn:hover, .btn:focus {
   color: #fff;
   border-color: #FF5274;
-  background-color: #FF5274; }
+  background-color: #098048; }
 
 .btn-white {
   font-size: 13px;
@@ -52,20 +52,20 @@ h5 {
   border-color: #fff; }
 
 .btn-white:hover, .btn-white:focus {
-  color: #FF5274;
-  border-color: #FF5274; }
+  color: #046e12;
+  border-color: #2e8b03; }
 
 .btn-fill {
   color: #fff;
-  border: solid 2px #FF5274;
+  border: solid 2px #06a142;
   border-radius: 40px;
   display: inline-block;
   text-transform: uppercase;
-  background-color: #FF5274; }
+  background-color: #098048; }
 
 .btn-fill:hover, .btn-fill:focus {
   color: #fff;
-  background-color: #D7405D;
+  background-color: #dfee56;
   border-color: #D7405D; }
 
 .btn-small {
@@ -349,7 +349,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url("../img/itz2.jpg") center center;
+  background: url("../img/DSCF3787.JPG") center center;
   background-size: cover;
   position: relative; }
   .hero .down-arrow a {
@@ -681,7 +681,7 @@ Sign up form
   text-align: left;
   position: relative; }
   .sign-up .signup-form .form-input-group i {
-    color: #FF5274;
+    color: #098048;
     font-size: 14px; }
   .sign-up .signup-form .form-input-group i:after {
     content: "";
